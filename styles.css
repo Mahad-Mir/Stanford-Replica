@@ -1,5 +1,4 @@
-html,
-body {
+html,body {
     min-height: 100%;
     min-width:100%;
     margin: 0px;
@@ -7,7 +6,7 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-
+/*OVERALL FORMAT*/
 * {
     box-sizing: border-box;
 }
@@ -17,6 +16,8 @@ a {
     color: black;
     margin: 0;
 }
+
+/*NAVIGATION BAR*/
 
 h1,h2,h3,h4,h5,h6,p {
     margin: 0px;
@@ -167,15 +168,17 @@ ul{
     left: 0;
     transform: none;
 }
-.HomeSec{
-    padding-bottom: 80px;
-}
+
+/*MAIN HOME PICTURE*/
+
 #background{
     background: url(images/background.webp);
     background-size: cover;
     background-position: center;
     height: 160vh;
 }
+/*MAIN STANFORD WRITTEN*/
+
 .banner_text{
     text-align: center;
     color: white;
@@ -183,6 +186,9 @@ ul{
     font-size: 90px;
     font-family: garamond;
 }
+
+/*ADJUSTMENTS FOR REPONSIVENESS*/
+
 @media (max-width: 768px) {
     .banner_text {
         font-size: 40px;
@@ -204,7 +210,10 @@ ul{
         width: 100%;
     }
 }
-.stan-btn{
+
+/*STANDARD BUTTON STYLING*/
+
+.btn{
    border: none;
    font-size: 20px;
    background-color: #b1040e;
@@ -212,21 +221,23 @@ ul{
    justify-content: center;
    display: block;
    margin: auto;
-   display: grid;
    padding: 10px 20px;
    cursor: pointer;
+}
+
+/*BOXES FOR CONTENT*/
+
+#normalcont{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    position: relative;
+    background: rgb(255, 253, 253);
 }
 #coloredcont{
     padding-top: 30px;
     padding-bottom: 40px;
     position: relative;
     background: rgb(216, 212, 212);
-}
-#normalcont{
-    padding-top: 30px;
-    padding-bottom: 40px;
-    position: relative;
-    background: rgb(255, 253, 253);
 }
 .heading h1{
     font-size: 50px;
@@ -262,22 +273,22 @@ ul{
   .box .content {
     padding: 16px;
   }
-  .category {
+  .headfont {
     font-size: 1rem;
     font-weight: bold;
-    color: #b00a2e;
+    color: #b1052b;
     text-transform: uppercase;
     margin-bottom: 8px;
+  }
+  .headfont2 h2{
+    color: black;
   }
   h2 {
     font-size: 1.2rem;
     color: #333;
     margin: 0;
   }
-  .category2 h2{
-    color: black;
-  }
-  .content p{
+  .descrip p{
     text-align: left;
     font-size: 20px;
   }
@@ -295,6 +306,9 @@ ul{
     color: rgb(76, 76, 221);
     text-decoration: underline;
 }
+
+/*RESEARCH ROW STYLE*/
+
 .row {
     display: flex;
     justify-content: space-between;
@@ -320,6 +334,9 @@ ul{
   .admpic{
     padding-bottom: 30px;
   }
+
+  /* FOOTER STYLING*/
+
 .footer_section_one{
     background-color: rgb(246, 246, 246);
     color: white;
@@ -329,6 +346,8 @@ ul{
     gap: 20px;
     padding: 20px;   
 }
+
+/*FOOTER ICONS*/
 
 .footerIcons{
     display: flex;
@@ -367,6 +386,8 @@ ul{
 .y2:hover{
     color:#FF0000;
 }
+
+/*FOOTER SECTION 2*/
 
 .footer_section_two{
     background-color: white;
@@ -490,6 +511,8 @@ ul{
     display: block;
 }
 
+/*FOOTER SECTION 3*/
+
 .footer_section_three{
     background-color: #8c1515;
     display: grid;
@@ -498,6 +521,8 @@ ul{
     width: 100%;
     padding: 30px;
 }
+
+/*FOOTER LOGO*/
 
 .footerLogo{
     display: flex;
@@ -572,6 +597,8 @@ ul{
     font-size: 1rem;
     color: white;
 }
+
+/*ADJUSTMENT OF HEADER N FOOTER*/
 
 @media (max-width: 1024px) {
 
