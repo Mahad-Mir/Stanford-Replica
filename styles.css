@@ -171,7 +171,7 @@ ul{
     padding-bottom: 80px;
 }
 #background{
-    background: url(pics/background.webp);
+    background: url(images/background.webp);
     background-size: cover;
     background-position: center;
     height: 160vh;
