@@ -216,36 +216,36 @@ ul{
    padding: 10px 20px;
    cursor: pointer;
 }
-#container{
+#coloredcont{
     padding-top: 30px;
     padding-bottom: 40px;
     position: relative;
     background: rgb(216, 212, 212);
 }
-#container2{
+#normalcont{
     padding-top: 30px;
     padding-bottom: 40px;
     position: relative;
     background: rgb(255, 253, 253);
 }
-.top-banner h1{
+.heading h1{
     font-size: 50px;
     padding-top: 50px;
     text-align: center;
 }
-.top-banner p{
+.heading p{
     text-align: center;
     font-size: 25px;
     padding-bottom: 30px;
 }
-.grid-container {
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 16px;
     padding: 16px;
     padding-bottom: 40px;
   }
-  .card {
+  .box {
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
@@ -254,12 +254,12 @@ ul{
     flex-direction: column;
   }
   
-  .card img {
+  .box img {
     width: 100%;
     height: auto;
     object-fit: cover;
   } 
-  .card .content {
+  .box .content {
     padding: 16px;
   }
   .category {
@@ -290,6 +290,10 @@ ul{
 }
 .chinese{
     padding-top: 70px;
+}
+.decorate:hover{
+    color: rgb(76, 76, 221);
+    text-decoration: underline;
 }
 .row {
     display: flex;
@@ -483,7 +487,6 @@ ul{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    vertical-align: middle;
     display: block;
 }
 
@@ -570,7 +573,7 @@ ul{
     color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     .topSHeader{
         font-size: 15px;
@@ -831,13 +834,10 @@ ul{
     .footerRightMap a{
         font-size: 0.9rem;
     }
-
     .footerNavGrid{
         grid-template-rows: 100%;
         grid-template-columns: repeat(2,1fr);
     }
-
-    
     .footerBottomDiv{
         grid-template-rows: 90% 10%;
         align-items: center; 
